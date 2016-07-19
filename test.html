@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Pifagor table</title>
+	<style type="text/css">
+		#pifagor td{
+			text-align: right;
+			font-size: 24px;
+			padding: 5px;
+		}
+	</style>
+	<script type="text/javascript">
+		function pifagorTable(){
+				document.write('<table id="pifagor">');
+				var i,j;
+				for (i=1;i<=9;i++){
+					document.write('<tr>');
+					 for (j=1;j<=9;j++){
+						document.write('<td>');
+						 document.write(i*j);
+						document.write('</td>');
+					 }
+					document.write('</tr>');
+				}
+				document.write('</table>');
+
+		}
+		pifagorTable();
+	</script>
+</head>
+<body>
+	
+</body>
+</html>

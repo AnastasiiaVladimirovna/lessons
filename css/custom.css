@@ -1,0 +1,110 @@
+html,body{
+	height: 100%;
+ 	position: relative;
+ 	transition: all .25s ease-out;
+}
+
+
+.block {
+  width: 100px;
+  height: 100px;
+  color: #fff;
+  font-size: 38px;
+  font-weight: bold;
+  margin: 0 50px;
+  background-color: red;
+  text-align: center;
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 100px;
+}
+.block.one {
+  background-color: #ff0000;
+}
+.block.two {
+  background-color: #e60000;
+}
+.block.three {
+  background-color: #cc0000;
+}
+.block.four {
+  background-color: #b30000;
+}
+.block.five {
+  background-color: #990000;
+}
+.block.six {
+  background-color: yellow;
+  border-radius: 50px 0;
+}
+/*button*/
+.add-button{
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+
+/*menu*/
+ul.menu {
+  background-color: #fff;
+  margin: 0;
+  border: 1px solid navy;
+  padding: 0;
+  display: inline-block;
+}
+ul.menu li {
+  border-right: 1px solid navy;
+  padding: 1em;
+  display: inline-block;
+  margin: 0;
+  color: navy;
+}
+ul.menu li:last-child {
+  border-right: none;
+}
+ul.menu li:hover {
+  background-color: #8080ff;
+  cursor:pointer;
+}
+ul.menu li.active {
+  color: #fff;
+  background-color: navy;
+}
+/*form*/
+.check-form{
+	margin: 20px 0;
+}
+.check-form input[name="age"],.check-form input[name="expirience"]{
+	border-radius:5px;
+	height: 25px;
+	border: 1px solid navy;
+
+}
+.check-form .message,.check-form .exp-info{
+	display: none;
+
+}
+/*list*/
+.messages li{
+	background-color: #eee;
+	border-radius: 1em;
+	padding: 1em;
+	list-style-type: none;
+	position: relative;
+	max-width: 400px;
+	margin: 0.25em 0;
+}
+.messages li p.time{
+	position: absolute;
+	top: 0;
+	right: 1em;
+	margin: 0;
+	font-size: 12px;
+	background-color: #ccc;
+	padding: 0.25em;
+}
+
+
+
+
+

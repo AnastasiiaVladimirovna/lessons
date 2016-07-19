@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Fibo</title>
+	<style type="text/css">
+		#pifagor td{
+			text-align: right;
+			font-size: 24px;
+			padding: 5px;
+		}
+	</style>
+	<script type="text/javascript">
+		/*
+		 * @name fiboElement - find element of Fibonacci sequence
+		 * @var int n - index of eement in Fibonacci sequeence
+		 * @return - int - element of Fibonacci sequence
+		*/
+		function fiboElement(n){
+			if(n===-1 || n===1 || n===2){
+				return 1;
+			} else if (n<0){
+				return -fiboElement(-n);
+			} else{
+				return fiboElement(n-1)+fiboElement(n-2);
+			}
+ 		}
+
+ 		console.log(fiboElement(-1), 1);
+ 		console.log(fiboElement(0), 0);
+ 		console.log(fiboElement(1), 1);
+ 		console.log(fiboElement(5), 5);
+ 		console.log(fiboElement(5), 5);
+ 		console.log(fiboElement(9), 34);
+ 		console.log(fiboElement(10), 55);
+ 		console.log(fiboElement(20), 6765);
+ 		console.log(fiboElement(-8), -21);
+
+ 		
+	</script>
+</head>
+<body>
+	
+</body>
+</html>
